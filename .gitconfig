@@ -1,0 +1,14 @@
+[user]
+	name = charlie
+	email = cairl99198899@outlook.com
+[diff]
+	tool = vimdiff
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
+	unstage = reset HEAD --
+[merge]
+	tool = vimdiff
