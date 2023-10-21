@@ -1,9 +1,10 @@
 " vimrc
+" i-->n
 inoremap jj <ESC>
 inoremap kk <ESC>
 set timeoutlen=300
-inoremap <A-j> <Down>
 vnoremap qq <ESC>
+" visual block
 nnoremap ,v <C-v>
 nnoremap <tab> V>
 nnoremap <s-tab> V<
@@ -19,3 +20,13 @@ set noerrorbells visualbell t_vb=
 set mouse+=a
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+noremap <C-d> :sh<cr>
+" show command
+set showcmd
+" wsl2 clipboard
+if system('uname -r') =~ "microsoft"
+	augroup Yank
+	autocmd!
+	autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
+	augroup END
+endif
