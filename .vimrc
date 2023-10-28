@@ -20,13 +20,12 @@ let g:ctrlp_cmd = 'CtrlP'
 noremap <C-d> :sh<cr>
 setlocal noswapfile " 不要生成swap文件
 set bufhidden=hide " 当buffer被丢弃的时候隐藏它
-colorscheme evening " 设定配色方案
 set number " 显示行号
 set cursorline " 突出显示当前行
 set ruler " 打开状态栏标尺
 set shiftwidth=2 " 设定 << 和 >> 命令移动时的宽度为 2
 set softtabstop=2 " 使得按退格键时可以一次删掉 2 个空格
-set tabstop=2 " 设定 tab 长度为 2
+set tabstop=4 " 设定 tab 长度为 2
 set nobackup " 覆盖文件时不备份
 set autochdir " 自动切换当前目录为当前文件所在的目录
 set backupcopy=yes " 设置备份时的行为为覆盖
